@@ -29,10 +29,10 @@ jobs:
 
       - name: Build Angular app
         run: |
-          npm run build -- --configuration production --base-href https://tarun-gurugubelli.github.io/devops-qna-blog/
+          npm run build --configuration production --base-href https://tarun-gurugubelli.github.io/devops-qna-blog/
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./dist/devops-qna-blog
+          publish_dir: ./dist/my-blog
