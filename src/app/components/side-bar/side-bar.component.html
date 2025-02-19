@@ -1,0 +1,11 @@
+<aside class="w-64 bg-gray-900 dark:bg-gray-900 shadow flex-shrink-0">
+    <div class="p-4">
+      <ul class="space-y-2">
+        <li *ngFor="let module of modules">
+          <a [routerLink]="['/module', module.toLowerCase()]" class="block text-gray-900 dark:text-white hover:bg-gray-200 dark:hover:bg-gray-700 p-2 rounded">
+            {{ module }}
+          </a>
+        </li>
+      </ul>
+    </div>
+  </aside>

@@ -1,0 +1,25 @@
+<div class="p-6 bg-gray-100 min-h-screen">
+    <!-- Welcome Section -->
+    <div class="text-center mb-12">
+      <h1 class="text-4xl font-bold text-gray-800 mb-4">Welcome to the DevOps Q&A Blog</h1>
+      <p class="text-lg text-gray-600 max-w-2xl mx-auto">
+        This blog is your ultimate resource for mastering DevOps concepts and acing your interviews. Whether you're preparing for a job interview or looking to deepen your knowledge, our curated questions and answers on Linux, Git, Docker, Ansible, Kubernetes, and more will guide you every step of the way.
+      </p>
+      <p class="text-lg text-gray-600 max-w-2xl mx-auto mt-4">
+        Explore the modules below to get started!
+      </p>
+    </div>
+  
+    <!-- Modules Grid -->
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+      <div *ngFor="let module of modules" class="bg-white shadow-md rounded-lg p-6 hover:shadow-lg transition-shadow">
+        <div class="text-center">
+          <i [class]="getModuleIcon(module)" class="text-4xl text-blue-600 mb-4"></i>
+          <h2 class="text-xl font-semibold text-gray-800">{{ module }}</h2>
+          <a [routerLink]="['/module', module.toLowerCase()]" class="mt-4 inline-block bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 transition-colors">
+            Explore
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>

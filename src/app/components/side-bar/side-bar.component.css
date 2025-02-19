@@ -1,0 +1,4 @@
+/* Ensure the sidebar takes full height */
+aside {
+    height: calc(100vh - 4rem); /* Adjust based on header height */
+  }
