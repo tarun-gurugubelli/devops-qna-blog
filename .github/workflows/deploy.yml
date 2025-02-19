@@ -30,7 +30,7 @@ jobs:
       - name: Build Angular app
         working-directory: ./devops-qna-blog
         run: |
-          npm run gh-build -base-href /devops-qna-blog/ && cp dist/my-blog/index.html dist/my-blog/404.html
+          npm run gh-build -base-href /devops-qna-blog/
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
