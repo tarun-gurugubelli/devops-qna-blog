@@ -13,6 +13,7 @@ export class AppComponent {
     this.isSidebarOpen = !this.isSidebarOpen;
   }
 
+  
   getModuleIcon(module: string): string {
     const icons: { [key: string]: string } = {
       Linux: 'fab fa-linux',
