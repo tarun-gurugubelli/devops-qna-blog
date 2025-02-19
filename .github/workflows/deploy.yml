@@ -28,7 +28,6 @@ jobs:
         run: npm install
 
       - name: Build Angular app
-        working-directory: ./devops-qna-blog
         run: |
           npm run gh-build -base-href /devops-qna-blog/
 
