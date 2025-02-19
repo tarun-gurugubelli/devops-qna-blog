@@ -36,11 +36,3 @@ jobs:
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./dist/my-blog
-      
-      - name: Push to another repository
-        uses: ad-m/github-push-action@v0.6.0
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          repository: tarun-gurugubelli/tarun-gurugubelli.github.io
-          branch: main                       
-          directory: ./dist/my-blog 
